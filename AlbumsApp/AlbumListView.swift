@@ -20,26 +20,25 @@ extension Color{
 }
 
 struct AlbumListView: View {
+    @ObservedObject var albumStore = AlbumStore.singleton
     var body: some View {
-        NavigationView{
+        NavigationView {
             List {
-                ForEach (AlbumStore.singleton.albums) { album in
+                ForEach (albumStore.albums) { album in
                     AlbumCell(album: album)
                 }
                 .onDelete(perform: deleteAlbum)
                 .onMove(perform: moveAlbum)
-            }.navigationBarTitle(Text("Albums"))
+            }
+            .navigationBarTitle(Text("Albums"))
             .navigationBarItems(trailing: EditButton())
         }
     }
-    func deleteAlbum (at offsets: IndexSet) {
-        for index in offsets {
-            AlbumStore.singleton.albums.remove(at: index)
-        }
-        print("offsets=\(offsets)")
+    func deleteAlbum(at offsets: IndexSet) {
+        albumStore.albums.remove(atOffsets: offsets)
     }
-    func moveAlbum(from source : IndexSet, to dest : Int){
-        
+    func moveAlbum(from src: IndexSet, to dst: Int) {
+        albumStore.albums.move(fromOffsets: src, toOffset: dst)
     }
 }
 
