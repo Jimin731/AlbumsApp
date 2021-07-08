@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36B2BA392696BA190089194C /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2BA382696BA190089194C /* AlbumDetailView.swift */; };
 		3D152F97269581FA00F8ADBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D152F96269581FA00F8ADBB /* AppDelegate.swift */; };
 		3D152F99269581FA00F8ADBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D152F98269581FA00F8ADBB /* SceneDelegate.swift */; };
-		3D152F9B269581FA00F8ADBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D152F9A269581FA00F8ADBB /* ContentView.swift */; };
+		3D152F9B269581FA00F8ADBB /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D152F9A269581FA00F8ADBB /* AlbumListView.swift */; };
 		3D152F9D269581FD00F8ADBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D152F9C269581FD00F8ADBB /* Assets.xcassets */; };
 		3D152FA0269581FD00F8ADBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D152F9F269581FD00F8ADBB /* Preview Assets.xcassets */; };
 		3D152FA3269581FD00F8ADBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D152FA1269581FD00F8ADBB /* LaunchScreen.storyboard */; };
@@ -38,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36B2BA382696BA190089194C /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 		3D152F93269581FA00F8ADBB /* AlbumsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D152F96269581FA00F8ADBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D152F98269581FA00F8ADBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D152F9A269581FA00F8ADBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D152F9A269581FA00F8ADBB /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
 		3D152F9C269581FD00F8ADBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D152F9F269581FD00F8ADBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D152FA2269581FD00F8ADBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,13 +110,14 @@
 			children = (
 				3D152F96269581FA00F8ADBB /* AppDelegate.swift */,
 				3D152F98269581FA00F8ADBB /* SceneDelegate.swift */,
-				3D152F9A269581FA00F8ADBB /* ContentView.swift */,
+				3D152F9A269581FA00F8ADBB /* AlbumListView.swift */,
 				3D152F9C269581FD00F8ADBB /* Assets.xcassets */,
 				3D152FA1269581FD00F8ADBB /* LaunchScreen.storyboard */,
 				3D152FA4269581FD00F8ADBB /* Info.plist */,
 				3D152F9E269581FD00F8ADBB /* Preview Content */,
 				3D152FC82695843400F8ADBB /* AlbumStore.swift */,
 				3D152FCA2695932400F8ADBB /* ImageStore.swift */,
+				36B2BA382696BA190089194C /* AlbumDetailView.swift */,
 			);
 			path = AlbumsApp;
 			sourceTree = "<group>";
@@ -277,10 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D152F97269581FA00F8ADBB /* AppDelegate.swift in Sources */,
+				36B2BA392696BA190089194C /* AlbumDetailView.swift in Sources */,
 				3D152FC92695843400F8ADBB /* AlbumStore.swift in Sources */,
 				3D152F99269581FA00F8ADBB /* SceneDelegate.swift in Sources */,
 				3D152FCB2695932400F8ADBB /* ImageStore.swift in Sources */,
-				3D152F9B269581FA00F8ADBB /* ContentView.swift in Sources */,
+				3D152F9B269581FA00F8ADBB /* AlbumListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
