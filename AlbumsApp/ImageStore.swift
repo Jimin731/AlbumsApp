@@ -8,7 +8,12 @@ import UIKit
 import SwiftUI
 
 class ImageStore {
+    static var cache = [String : Image]()
     static func load(strUrl: String, onDownload: @escaping (Image) -> Void) -> Image {
+        if let image = cache[strUrl]{
+            NSLog("Using downloaded image for: \(strUrl)")
+            return image
+        }
         guard let url = URL(string: strUrl) else {
             print("Invalid URL:\(strUrl)")
             return Image(systemName: "tv.music.note")
@@ -22,6 +27,10 @@ class ImageStore {
                 }
             }
             OperationQueue.main.addOperation {
+                if image != nil{
+                    cache[strUrl] = image
+                }
+               
                 NSLog("end: \(strUrl)")
                 onDownload(image ?? Image(systemName: "tv.music.note"))
             }
